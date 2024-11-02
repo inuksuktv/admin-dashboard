@@ -1,4 +1,77 @@
 body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+header {
+    background-color: white;
+    color: black;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+header .top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .account-area {
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar {
+    background-color: lightblue;
+    color: white;
+    grid-column-start: 1;
+    grid-row: 1 / span 2;
+}
+
+.main-content {
     background-color: lightgrey;
-    color: red;
+    color: black;
+    display: grid;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-template-columns: 3fr 1fr;
+}
+
+.sidebar {
+    padding-left: 6px;
+    padding-top: 6px;
+}
+
+.widget-container {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.project-area {
+    grid-column-start: 1;
+    grid-row: 1 / span 2;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+}
+
+.card {
+    border: 1px solid black;
+}
+
+.announcement-area {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.trending-area {
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
