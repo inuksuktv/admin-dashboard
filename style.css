@@ -25,11 +25,20 @@ header .account-area {
     gap: 10px;
 }
 
+.search-bar form {
+    align-items: center;
+}
+
 .sidebar {
     background-color: lightblue;
     color: white;
     grid-column-start: 1;
     grid-row: 1 / span 2;
+}
+
+.widget {
+    align-items: center;
+    display: flex;
 }
 
 .main-content {
